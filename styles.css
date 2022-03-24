@@ -2,26 +2,11 @@
   margin: 0px;
   font-family: 'PT Sans', sans-serif;
 }
-.base {
-  width: 100%;
-  height: 100vh;
-  /* position: relative; */
-  background-image: url("/img/background.jpg");
-  background-size: cover;
-}
 
-.bgImage {
-  /* position: absolute; */
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-    rgba(42, 27, 161, 0.7),
-    rgba(29, 210, 177, 0.7)
-  );
-}
 header {
   background: #4E5AC5;
   /* width: 100%; */
+  z-index: 9;
   position: sticky;
   top: 0;
   padding-left: 15px;
@@ -80,6 +65,26 @@ header {
   border: none;
 }
 
+
+section {
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+}
+
+.hero {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(42, 27, 161, 0.7),
+    rgba(29, 210, 177, 0.7)
+  );
+}
+
+
 .introBox {
   position: absolute;
   width: 100%;
@@ -103,7 +108,7 @@ header {
   justify-content: space-evenly;
 }
 
-.intro > .introHeading > h2 {
+.intro > h2 {
   font-size: 35px;
 }
 
