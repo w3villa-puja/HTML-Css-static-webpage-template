@@ -5,13 +5,13 @@
 .base {
   width: 100%;
   height: 100vh;
-  position: relative;
+  /* position: relative; */
   background-image: url("/img/background.jpg");
   background-size: cover;
 }
 
 .bgImage {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
@@ -19,9 +19,11 @@
     rgba(29, 210, 177, 0.7)
   );
 }
-.topbar {
-  background-color: #0000;
+header {
+  background: #4E5AC5;
   /* width: 100%; */
+  position: sticky;
+  top: 0;
   padding-left: 15px;
   padding-right: 15px;
   height: 65px;
@@ -351,14 +353,14 @@
 .price__tiles > .tile {
   width: 280px;
   height: 450px;
-  position: relative;
+  /* position: relative; */
   background: url(img/image1.jpg);
   background-size: cover;
   margin: 20px;
 }
 
 .price__tiles > .tile > .content {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 100%;
 }
@@ -515,11 +517,11 @@
   background: url(img/panorama-3094696_1920.jpg);
   background-size: cover;
   height: 80vh !important;
-  position: relative;
+  /* position: relative; */
 }
 
 .contact > .main {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: inherit;
   color: white;
