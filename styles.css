@@ -32,7 +32,7 @@ header {
 }
 
 .topbarOption {
-  display: flex !important;
+  display: flex;
   flex-basis: auto;
   align-items: center;
 }
@@ -109,6 +109,9 @@ header {
 .intro > h2 {
   font-size: 35px;
 }
+.intro > p {
+  margin-bottom: 10px;
+}
 
 .buttons {
   display: flex;
@@ -138,30 +141,36 @@ header {
 /* First Section */
 
 .about {
-  display: flex;
-  flex-direction: column;
-  min-height: 90vh !important;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* min-height: 90vh !important; */
   background-color: rgba(0, 0, 0, 0.05);
 }
 
 .tiles {
   width: 100%;
-  flex: 0.33;
-  display: flex;
+  /* flex: 0.33; */
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   color: white;
 }
 
 .about > .tiles > .tile {
-  flex: 0.25;
+  /* flex: 0.25; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 40px 20px;
+
 }
 
 .tile--1 {
   background-color: #8f57f1;
+  
 }
 
 .tile > i {
@@ -183,17 +192,15 @@ header {
 }
 .tile--3 {
   background-color: #339482;
+ 
 }
 .tile--4 {
   background-color: #25b9fd;
+
 }
 
 .about__title {
-  flex: 0.33;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 50px;
   text-align: center;
   font-size: 15px;
 }
@@ -204,20 +211,14 @@ header {
 }
 
 .about__blocks {
-  flex: 0.33;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 50px;
+  display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .about__blocks > .block {
-  width: 250px;
-  height: 150px;
   margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -283,10 +284,13 @@ header {
   flex: 0.4;
 }
 .projectDesc {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   padding-bottom: 50px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .projectDesc > img {
@@ -362,6 +366,9 @@ hr {
   justify-content: center;
   align-items: center;
 }
+.pricing > .container {
+  align-items: normal;
+}
 
 .container > .pricing-desc {
   flex: 0.2;
@@ -385,21 +392,26 @@ hr {
 }
 
 .price__tiles {
-  flex: 0.6;
+  /* flex: 0.6; */
   /* width: 100%;
   height: 100%; */
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; */
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 50px;
 }
 
 .price__tiles > .tile {
-  width: 300px;
+  width: calc(100% - 20px) !important;
   height: 500px;
+  margin: auto;
   /* position: relative; */
   background: url(img/image1.jpg);
   background-size: cover;
+  margin-bottom: 30px;
   /* margin: 20px; */
 }
 
@@ -510,15 +522,20 @@ hr {
 
 .container > .members__row {
   flex: 0.5;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  /* align-items: flex-start;
+  justify-content: space-between; */
 }
 .mem > .m {
-  flex: 0.5;
-  display: flex;
+  /* flex: 0.5; */
+  /* display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-between; */
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
 }
 
 .mem > .m > img {
@@ -530,15 +547,15 @@ hr {
 }
 
 .mem > .m > .des {
-  flex: 0.4;
-  width: 100%;
+  /* flex: 0.4; */
+  width: calc(100% - 20px);
   height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
   text-align: left;
-  margin-right: 10px;
+  margin-left: 20px;
 }
 
 .mem > .m > .des > .name {
@@ -574,7 +591,7 @@ hr {
 .contact {
   background: url(img/panorama-3094696_1920.jpg);
   background-size: cover;
-  height: 100vh !important;
+  /* height: 100vh !important; */
   /* position: relative; */
 }
 
@@ -596,18 +613,20 @@ hr {
   /* font-size: 15px; */
 }
 
-.container > p {
+.main > .container > p {
   flex: 0.1;
   font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
+  padding-bottom: 0px;
 }
 
 .container > .userForm {
-  margin-top: 30px;
+  margin: 50px;
   flex: 0.5;
+  padding: 40px;
   display: flex;
-  min-height: 80%;
+  /* min-height: 80%; */
   width: 100%;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -616,9 +635,12 @@ hr {
 
 .userForm > .form {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+  display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .userForm > .form > .contactus {
@@ -752,4 +774,72 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+ 
+@media (max-width: 767px) {
+  .topbarOption {
+    display: none;
+  }
+
+  .tiles {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  }
+  .about__blocks {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projectDesc {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projectDesc > img {
+    margin-left: 40px;
+  }
+  .price__tiles {
+    grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container > .members__row {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .mem > .m {
+    margin-bottom: 20px;
+    
+  }
+  .introBox > .intro {
+    font-size: 12px;
+    width: 300px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-column-end: 4;
+    grid-row-end: 4;
+  }
+  .intro > .buttons > button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .tiles {
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  }
+
+  .mem > .m {
+    grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projectDesc > img {
+    margin-left: 0px;
+  }
+
+  .userForm > .form {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
