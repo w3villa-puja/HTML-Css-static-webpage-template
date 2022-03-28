@@ -275,6 +275,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .projectDesc > img {
@@ -316,7 +317,7 @@ header {
   padding-top: 10px;
 }
 
-/* third section */
+/* Pricing section */
 
 .pricing {
   background-color: rgb(61, 69, 180);
@@ -336,8 +337,8 @@ header {
   color: white;
   font-size: 15px;
   /* padding: 0 20%; */
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin: 50px;
+
 }
 
 .container > .pricing-desc > p {
@@ -449,7 +450,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px;
 }
 
 .container > .heading > p {
@@ -469,7 +470,7 @@ header {
 .container > .mem {
   width: 100%;
   /* display: flex; */
-  margin: 20px 0;
+  margin-bottom: 50px;
 }
 
 .container > .members__row {
@@ -535,14 +536,14 @@ header {
 .contact {
   background: url(img/panorama-3094696_1920.jpg);
   background-size: cover;
-  height: 80vh !important;
+  height: 100vh !important;
   /* position: relative; */
 }
 
 .contact > .main {
   /* position: absolute; */
   width: 100%;
-  height: inherit;
+  height: 100%;
   color: white;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -568,7 +569,7 @@ header {
   margin-top: 30px;
   flex: 0.5;
   display: flex;
-  min-height: 50%;
+  min-height: 80%;
   width: 100%;
   border: 1px solid transparent;
   border-radius: 5px;
