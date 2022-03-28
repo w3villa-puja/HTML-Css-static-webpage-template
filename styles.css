@@ -233,6 +233,17 @@ header {
   margin-top: 10px;
 }
 
+.block > .fa-dashboard {
+  color: orange;
+}
+
+.fa-comments-o {
+  color: rgb(37, 168, 219);
+}
+.fa-cubes {
+  color: red;
+}
+
 /* Project Section */
 .project {
   display: flex;
@@ -299,12 +310,37 @@ header {
 .description > i {
   flex: 0.08;
   font-size: 26px;
+  /* color: rgb(13, 187, 187); */
+}
+.fa-book {
   color: rgb(13, 187, 187);
 }
+.fa-code {
+  color: red;
+}
 
+.fa-money {
+  color: rgb(110, 12, 129);
+}
+
+.fa-bar-chart {
+  color: rgb(110, 12, 129);
+}
+
+.fa-music {
+  color: rgb(228, 48, 117);
+}
+
+.fa-smile-o {
+  color: rgb(33, 187, 248);
+}
 .description > .sec {
   flex: 0.9;
   padding: 0px;
+}
+hr {
+  margin-bottom: 50px;
+  background-color: rgba(200, 200, 200, 0.1);
 }
 
 .sec > h1 {
@@ -338,7 +374,6 @@ header {
   font-size: 15px;
   /* padding: 0 20%; */
   margin: 50px;
-
 }
 
 .pricing-desc > h1 {
@@ -438,14 +473,6 @@ header {
   align-items: center;
   justify-content: center;
 }
-/* .container1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  padding: 3% 15%;
-} */
 
 .container > .heading {
   font-size: 15px;
@@ -486,7 +513,6 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
 }
 .mem > .m {
   flex: 0.5;
@@ -537,6 +563,10 @@ header {
 
 .mem > .m > .des > .link {
   flex: 0.2;
+}
+.link > i {
+  color: rgb(59, 159, 226);
+  font-size: 15px;
 }
 
 /* Fifth Section */
