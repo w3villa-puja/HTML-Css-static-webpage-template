@@ -707,7 +707,21 @@ hr {
   display: flex;
   align-items: center;
 }
+.send > .fa-send-o {
+  font-size: 12px;
+}
 
+.fa-map-marker {
+  font-size: 28px;
+}
+
+.fa-phone {
+  font-size: 28px;
+}
+
+.fa-envelope {
+  font-size: 28px;
+}
 .send > button {
   margin: 0 5%;
   padding: 10px 25px;
