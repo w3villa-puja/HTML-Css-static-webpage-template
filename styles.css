@@ -141,10 +141,9 @@ header {
 /* First Section */
 
 .about {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* min-height: 90vh !important; */
-  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tiles {
@@ -203,6 +202,10 @@ header {
   padding: 50px;
   text-align: center;
   font-size: 15px;
+}
+
+.about__title > h1 {
+  font-size: 2.25rem;
 }
 
 .about__title > p {
