@@ -33,13 +33,7 @@ header > .container {
 }
 
 .left {
-  /* display: inline-block; */
-  /* padding-top: 0.3125rem; */
-  /* padding-bottom: 00.3125rem; */
-  /* margin-right: 1rem; */
   font-size: 20px;
-  /* line-height: inherit; */
-  /* white-space: nowrap; */
   color: #fff;
   text-decoration: none;
 }
