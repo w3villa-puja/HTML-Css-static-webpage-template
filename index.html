@@ -2,23 +2,25 @@
 <html>
   <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://css.gg/play-button.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
   </head>
   <body>
     <header>
+      <div class="container">
       <a href="#" class="left">Material Landing</a>
+      <i class="fa fa-bars" aria-hidden="true"></i>
       <div class="topbarOption">
         <ul>
           <li>
@@ -39,11 +41,12 @@
         </ul>
         <button class="btn1">DOWNLOAD</button>
       </div>
+    </div>
     </header>
 
     <section class="hero">
       <div class="introduction">
-        <div class="introBox">
+        <div class="container">
           <div class="intro">
             <h2>Your Success is Our Mission.</h2>
             <p>
@@ -67,9 +70,9 @@
 
     <!-- About Section -->
 
-    <section class="about">
+    <section class="highLights">
       <div class="tiles">
-        <div class="tile tile--1">
+        <div class="tile bg-voilet">
           <i class="fa fa-line-chart"></i>
           <h2>Agile Framework</h2>
           <p>
@@ -77,7 +80,7 @@
             level overviews.
           </p>
         </div>
-        <div class="tile tile--2">
+        <div class="tile bg-pink">
           <i class="fa fa-industry"></i>
           <h2>Corporate Strategy</h2>
           <p>
@@ -85,7 +88,7 @@
             thinking to further the overall value preposition.
           </p>
         </div>
-        <div class="tile tile--3">
+        <div class="tile bg-green">
           <i class="fa fa-group"></i>
           <h2>Workplace Diversity</h2>
           <p>
@@ -93,7 +96,7 @@
             workplace diversity and empowerment.
           </p>
         </div>
-        <div class="tile tile--4">
+        <div class="tile bg-skyblue">
           <i class="fa fa-bullhorn"></i>
           <h2>Survival Strategies</h2>
           <p>
@@ -263,7 +266,7 @@
           </p>
         </div>
         <div class="price__tiles">
-          <div class="tile tile--1">
+          <div class="tile">
             <div class="content con--1">
               <h1>Individual</h1>
               <p>$<span>9</span>/m</p>
@@ -277,7 +280,7 @@
               <button type="button">BUY NOW</button>
             </div>
           </div>
-          <div class="tile tile--2">
+          <div class="tile">
             <div class="content con--2">
               <h1>Startup</h1>
               <p>$<span>29</span>/m</p>
@@ -291,7 +294,7 @@
               <button type="button">BUY NOW</button>
             </div>
           </div>
-          <div class="tile tile--3">
+          <div class="tile">
             <div class="content con--3">
               <h1>Enterprise</h1>
               <p>$<span>99</span>/m</p>
@@ -464,10 +467,30 @@
         <i class="fa fa-google-plus"></i>
         <i class="fa fa-linkedin"></i>
       </div>
-      <div class="copy">
-        <p>&copy; Material Landing:-Design-Template</p>
+      <div class="copyRight">
+        <p>&copy; W3 VILLA :- Design-Template</p>
       </div>
     </footer>
+
+    <script>
+
+      $(window).scroll(function(){
+        $('header').toggleClass('bg-dark', $(this).scrollTop() > 100);
+      });
+
+    </script>
+    <!-- <script type="text/javascript">
+      $(".menu-toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".topbarOption").toggleClass("active");
+      })
+    </script> -->
+
+    <script>
+      $('i.fa-bars').click(function() {
+          $('.topbarOption').toggle();
+      });
+  </script>
   </body>
 </html>
 
