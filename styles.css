@@ -345,6 +345,7 @@ header > .container {
 .description > .sec {
   flex: 0.9;
   padding: 0px;
+  margin-left: 10px;
 }
 hr {
   margin-bottom: 50px;
@@ -539,7 +540,7 @@ hr {
   width: calc(100% - 20px);
   height: 80%;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 35px;
 }
 
 .mem > .m > .des > .name {
@@ -769,15 +770,22 @@ hr {
 
   .topbarOption {
     position: fixed;
-    width: 100%;
-    max-width: 300px;
+    /* width: 100%;
+    max-width: 300px; */
     height: -webkit-fill-available;
     background: #4e5ac5cc;
     top: 65px;
-    right: 0;
-    display: none;
+    right: -315px;
+    /* display: none; */
     padding: 20px 40px;
     box-sizing: border-box;
+    transition: right 0.5s ease;
+  }
+
+  .topbarOption.visible {
+    right: 0px;
+    display: block;
+    transition: right 0.5s ease;
   }
 
   .topbarOption > ul {
@@ -821,9 +829,17 @@ hr {
   .container > .mem {
     margin-bottom: 0px;
   }
+  .container > .mem .img-parent{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-  .mem > .m > img {
-    width: 95%;
+  .mem > .m img {
+    /* width: 95%; */
+    object-fit: contain;
   }
   
   .mem > .m {
@@ -877,8 +893,8 @@ hr {
   }
 
   .mem > .m {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 0.7fr);
+    grid-template-columns: repeat(1, 0.9fr);
   }
 
   .projectDesc > img {
